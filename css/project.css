@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Project Deep Dive Specific Styles
+   ========================================================================== */
+
+/* Hero Section */
+.project-hero {
+  padding: 10rem 0 5rem;
+  background: var(--surface-color);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.back-link:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+.project-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -1px;
+}
+
+.project-hero .project-lead {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  line-height: 1.6;
+}
+
+/* Content Layout */
+.content-section {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Data Intelligence Cards */
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.data-card {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform var(--transition-fast);
+}
+
+.data-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(88, 166, 255, 0.3);
+}
+
+.data-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  letter-spacing: 1.5px;
+}
+
+.data-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+/* Strategy Blocks */
+.strategy-block, .impact-block {
+  background: var(--surface-color);
+  padding: 3rem;
+  border-radius: var(--border-radius-lg);
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.strategy-block h3, .impact-block h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.strategy-block p, .impact-block p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Personas */
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.persona-card {
+  background: linear-gradient(145deg, var(--surface-hover), var(--surface-color));
+  padding: 2.5rem;
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent-blue);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.persona-header {
+  margin-bottom: 1.5rem;
+}
+
+.persona-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.persona-demographic {
+  font-size: 0.95rem;
+  color: var(--accent-blue);
+  font-weight: 500;
+}
+
+.persona-pain-point {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.persona-pain-point strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .project-hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   Brand Integrations
+   ========================================================================== */
+
+/* YouTube Brand */
+.brand-youtube .accent-text { color: #FF0000; }
+.brand-youtube .content-section h2 { color: #FF0000; border-bottom-color: #FF0000; }
+.brand-youtube .project-tag { color: #FF0000; }
+.brand-youtube .persona-card { border-left-color: #FF0000; border-top-color: #FF0000; }
+.brand-youtube .persona-demographic { color: #FF0000; }
+.brand-youtube .data-card:hover { border-color: rgba(255, 0, 0, 0.3); }
+
+/* Google Maps Brand */
+.brand-maps .accent-text { color: #34A853; }
+.brand-maps .content-section h2 { color: #4285F4; border-bottom-color: #4285F4; }
+.brand-maps .project-tag { color: #4285F4; }
+.brand-maps .persona-card { border-left-color: #34A853; }
+.brand-maps .persona-demographic { color: #4285F4; }
+.brand-maps .data-card:hover { border-color: rgba(66, 133, 244, 0.3); }
+
+/* Logo in Headers */
+.company-logo {
+  max-width: 150px;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   New Project Sections Additions
+   ========================================================================== */
+
+/* Ideation Pool */
+.ideation-pool {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ideation-item {
+  background: var(--surface-color);
+  padding: 2rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.ideation-number {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.ideation-content h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+.ideation-content p { color: var(--text-secondary); line-height: 1.6; }
+
+/* Impact vs Effort Matrix */
+.matrix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.matrix {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2px;
+  background: rgba(255,255,255,0.1);
+  padding: 2px;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  border-left: 2px solid var(--text-primary);
+  border-bottom: 2px solid var(--text-primary);
+}
+
+.matrix::before { content: 'Impact'; position: absolute; left: -40px; top: 50%; transform: translateY(-50%) rotate(-90deg); font-weight: bold; }
+.matrix::after { content: 'Effort'; position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); font-weight: bold; }
+
+.matrix-quadrant { background: var(--bg-color); padding: 1rem; position: relative; }
+.matrix-quadrant.q1 { border-radius: 0 var(--border-radius-sm) 0 0; }
+.matrix-quadrant.q2 { border-radius: var(--border-radius-sm) 0 0 0; }
+.matrix-quadrant.q3 { border-radius: 0 0 0 var(--border-radius-sm); }
+.matrix-quadrant.q4 { border-radius: 0 0 var(--border-radius-sm) 0; }
+
+.matrix-point {
+  position: absolute;
+  background: var(--text-primary);
+  color: var(--bg-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* User Journey Flowchart */
+.journey-flowchart {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 0;
+  justify-content: center;
+}
+
+.journey-step {
+  background: var(--surface-color);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-sm);
+  text-align: center;
+  flex: 1 1 150px;
+  max-width: 200px;
+}
+
+.journey-arrow {
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+}
+
+/* Proposed UI Gallery */
+.ui-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ui-mockup {
+  background: var(--surface-color);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ui-mockup img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ui-mockup-info {
+  padding: 1.5rem;
+}
+
+.ui-mockup-info h3 { margin-bottom: 0.5rem; font-size: 1.15rem; }
+.ui-mockup-info p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem; }
+.ui-mockup-pointers { font-size: 0.85rem; padding-left: 1rem; color: #aaa; }
+
+/* Persona Additions */
+.persona-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--surface-hover);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  overflow: hidden;
+}
+.persona-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.persona-details { margin-top: 1rem; font-size: 0.9rem; }
+.persona-details span { display: block; margin-top: 0.5rem; color: var(--text-secondary); }
